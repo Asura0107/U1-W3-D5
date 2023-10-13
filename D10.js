@@ -101,38 +101,36 @@ console.log(splitMe());
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
-// const deleteOne = (x, y) => {
-//   if (x === y) {
-//     const arr1 = x.split("");
-//     const ARRy = arr1.();
-//     const Arry3 = ARRy.join();
-//     console.log(Arry3);
+const deleteOne = (x, y) => {
+  if (x === y) {
+    const arr1 = x.split("");
+    const ARRy = arr1.();
+    const Arry3 = ARRy.join();
+     console.log(Arry3);
 
-//     return Arry3;
-//   } else {
-//     const arr = x.split("");
-//     const arrow = arr.pop();
-//     // const freccia = arrow.join();
-//     console.log(arrow);
+    return Arry3;
+   } else {
+    const arr = x.split("");
+     console.log(arrow);
 
-//     return arrow;
-//   }
-// };
-// console.log(deleteOne("I love coding", false));
+     return arrow;
+   }
+ };
+console.log(deleteOne("I love coding", false));
 
 /* ESERCIZIO 5
-  Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
+  Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.*/
 
-  Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
-*/
-// const onlyLetters = function (str) {
-//   const hope = parseInt(str);
-//   if ((hope = NaN)) {
-//     const nonumb = str.replace(/[0-9]/g, "");
-//     return nonumb;
-//   }
-// };
-// console.log(onlyLetters("I have 4 dogs"));
+  // Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
+
+ const onlyLetters = function (str) {
+   const hope = parseInt(str);
+   if ((hope = NaN)) {
+     const nonumb = str.replace(/[0-9]/g, "");     
+     return nonumb;
+   }
+ };
+ console.log(onlyLetters("I have 4 dogs"));
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
@@ -572,7 +570,7 @@ const isItPrime = function (num) {
   if (num <= 3) {
     return true;
   }
-  // in questo modo sto dicendo che  qualsiasi numero il cui resto mi da 0 non sarà primo
+  // in questo modo sto dicendo che  qualsiasi numero il cui resto mi da 0 non sarà pri
   for (let i = 2; i < num; i++) {
     if (number % i === 0) {
       return false;
