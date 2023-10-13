@@ -101,36 +101,43 @@ console.log(splitMe());
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
-const deleteOne = (x, y) => {
-  if (x === y) {
-    const arr1 = x.split("");
-    const ARRy = arr1.();
-    const Arry3 = ARRy.join();
-     console.log(Arry3);
-
-    return Arry3;
-   } else {
-    const arr = x.split("");
-     console.log(arrow);
-
-     return arrow;
-   }
- };
+const deleteOne = (str, boolean) => {
+  if (boolean === true) {
+    return str.substring(1);
+  } else {
+    return str.slice(0, -1);
+  }
+};
 console.log(deleteOne("I love coding", false));
 
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.*/
 
-  // Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
+// Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 
- const onlyLetters = function (str) {
-   const hope = parseInt(str);
-   if ((hope = NaN)) {
-     const nonumb = str.replace(/[0-9]/g, "");     
-     return nonumb;
-   }
- };
- console.log(onlyLetters("I have 4 dogs"));
+const onlyLetters = function (str) {
+  const space0 = [];
+  for (let i = 0; i < str.length; i++) {
+    const letter = str[i];
+
+    if (
+      letter !== "0" &&
+      letter !== "1" &&
+      letter !== "2" &&
+      letter !== "3" &&
+      letter !== "4" &&
+      letter !== "5" &&
+      letter !== "6" &&
+      letter !== "7" &&
+      letter !== "8" &&
+      letter !== "9"
+    ) {
+      space0.push(letter).join();
+    }
+  }
+  console.log(space0);
+};
+console.log(onlyLetters("I have 4 dogs"));
 
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
