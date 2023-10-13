@@ -481,12 +481,16 @@ removeIndex(1);
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
-const domid = document.querySelector("#containe");
+const box = () => {
+  const domid = document.querySelector("#container");
+};
 
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
-const alltd = document.getElementsByTagNameNS("td");
+const Box2 = () => {
+  const alltd = document.getElementsByTagNameNS("td");
+};
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
@@ -561,3 +565,17 @@ const trTable = function () {
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
+const isItPrime = function (num) {
+  if (num === 1 || num === 2) {
+    return true;
+  }
+
+  for (let i = 2; i < num; i++) {
+    if (number % i == 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+};
+isItPrime(5);
