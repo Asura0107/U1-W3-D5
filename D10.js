@@ -569,13 +569,15 @@ const isItPrime = function (num) {
   if (num === 1 || num === 2) {
     return true;
   }
-
+  if (num <= 3) {
+    return true;
+  }
+  // in questo modo sto dicendo che  qualsiasi numero il cui resto mi da 0 non sarà primo
   for (let i = 2; i < num; i++) {
-    if (number % i == 0) {
+    if (number % i === 0) {
       return false;
-    } else {
-      return true;
     }
   }
+  return true;
 };
 isItPrime(5);
