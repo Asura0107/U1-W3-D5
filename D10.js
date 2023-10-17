@@ -520,7 +520,7 @@ const link = function () {
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 const thesamemaybe = function () {
-  const listul = document.getElementById("#myList");
+  const listul = document.getElementById("myList");
   const item = document.createElement("li");
   listul.appendChild(item);
 };
@@ -528,7 +528,7 @@ const thesamemaybe = function () {
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 const svuotatutto = function () {
-  const listnotidy = document.getElementById("#myList");
+  const listnotidy = document.getElementById("myList");
   listnotidy.value = "";
 };
 
